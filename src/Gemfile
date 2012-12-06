@@ -24,8 +24,7 @@ gem 'simple_form', '~> 2.0.3'
 gem 'haml-rails'
 gem 'sass-rails'
 gem 'compass-rails'
-
-gem 'alchemy', :path => "~/alchemy"
+gem "alchemy", ">= 1.0.1"
 
 platforms :ruby_18 do
   gem 'fastercsv'
