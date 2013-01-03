@@ -30,6 +30,11 @@ platforms :ruby_18 do
   gem 'fastercsv'
 end
 
+group :assets do
+  gem 'uglifier'
+  gem 'therubyracer'
+end
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails', '~> 1.4.0'
