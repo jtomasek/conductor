@@ -10,7 +10,7 @@ before_install:
   - sed -i s/'pg'/'sqlite3'/ src/Gemfile
 install:
   - cd src 
-  - bundle install --path bundle
+  - bundle install --path bundle --without=js_runtime_v8
 before_script:
   - cp config/database.sqlite config/database.yml
   - bundle exec rake dc:oauth_keys
