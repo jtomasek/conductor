@@ -32,6 +32,11 @@ end
 
 group :assets do
   gem 'uglifier'
+end
+
+# If you are using Node.js instead of Google v8 as JavaScript runtime, do not
+# install this gem group
+group :js_runtime_v8 do
   gem 'therubyracer'
 end
 
