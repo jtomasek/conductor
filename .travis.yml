@@ -6,6 +6,7 @@ gemfile: src/Gemfile
 env: 
   - SUITE=cucumber
   - SUITE=spec
+  - SUITE=assets:precompile
 before_install:
   - sed -i s/'pg'/'sqlite3'/ src/Gemfile
 install:
